@@ -439,8 +439,6 @@ class SLIM:
         self.W = None  # 系数集合
         self.recommendation = None
 
-        self.__covariance_dict = None
-
     def compute_recommendation(self, alpha=0.5, lam_bda=0.02, max_iter=1000, tol=0.0001, N=10, lambda_is_ratio=True):
         """
         开始计算推荐列表
