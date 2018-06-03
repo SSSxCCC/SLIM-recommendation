@@ -651,6 +651,6 @@ if __name__ == '__main__':
     df['time'] = times
     print(df)
 
-    # recommend = SLIM_c(Data())
+    # recommend = SLIM(Data())
     # recommend.compute_recommendation()
     # Evaluation(recommend).evaluate()
