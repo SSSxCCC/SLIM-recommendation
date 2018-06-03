@@ -620,23 +620,6 @@ class Evaluation:
         return ret / n
 
 
-def get_evaluation(algorithm, data):
-    recommend = None
-    if algorithm == 'UserCF':
-        recommend = UserCF(data)
-    elif algorithm == 'ItemCF':
-        recommend = ItemCF(data)
-    elif algorithm == 'LFM':
-        recommend = LFM(data)
-    elif algorithm == 'SLIM':
-        recommend = SLIM(data)
-
-    recommend.compute_recommendation()
-    eva = Evaluation(recommend)
-    eva.evaluate()
-    return eva
-
-
 if __name__ == '__main__':
     algorithms = [UserCF, ItemCF, LFM, SLIM]
     precisions = []
