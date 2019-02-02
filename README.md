@@ -1,4 +1,4 @@
-# SLIM-LFM-recommendation
+# SLIM-recommendation
 
 This project includes a simple recommendation system, several recommendation algorithms.
 
